@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+body{
+    background-color: rgb(0 0 0 / 89%);
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    margin: 0;
+}
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+.header-area {
+    background-color: black;
+    margin-bottom: 50px;
+}
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header-area h3 {
+    font-size: 30px;
+}
+.header-area .logo h3 {
+    margin: 10px;
+}
+.menu a {
+    margin: 0 10px;
+    color : white;
+    font-size: 16px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+.menu .active {
+    color: crimson;
+}
+
+.main-area{
+    display: flex;
+    align-items: center;
+}
+.main-area h2 {
+    font-size: 51px;
+    font-weight: 400;
+    margin: 0;
+}
+.main-area p {
+    font-size: 22px;
+}
+.main-area .content {
+    width: 60%;
+}
+.main-area button{
+    border-radius: 25px;
+    padding: 15px 50px;
+    border: none;
+    color: white;
+}
+.main-area .learn {
+    background-color: crimson;
+    margin-right: 20px;
+    border: 2px solid crimson;
+}
+.main-area #watch {
+    background-color: transparent;
+    border: 2px solid crimson;
+}
+.main-area .form-area {
+    width: 40%;
+    background-color: #151414;
+    padding: 20px;
+    text-align: center;
+}
+.form-area input {
+    width: 80%;
+    margin: 8px 0;
+    font-size: 14px;
+    padding: 15px;
+    background-color: #620e1e;
+    border: none;
+    color: white;
+}
+.form-area input[type="submit"]{
+    border-radius: 25px;
+    background-color: transparent;
+    border: 2px solid #780e22;
+    width: 87%;
+    cursor: pointer;
+}
+
+
+/* responsive css */
+
+@media only screen and (max-width: 768px){
+    body{
+      
+    }
+    .header {
+       flex-direction: column;
+       padding-bottom: 15px;
+    }
+    .opt {
+        display: none;
+    }
+    .main-area{
+        flex-direction: column;
+        gap: 60px;
+    }
+    .main-area .content {
+        width: 100%;
+        text-align: center;
+    }
+    .main-area .form-area {
+        width: 100%;
+    }
+    .main-area .learn {
+        margin-right: 0px;
+        margin-bottom: 20px;
+    }
+
+}
